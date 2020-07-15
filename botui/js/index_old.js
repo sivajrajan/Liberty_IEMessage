@@ -29,7 +29,6 @@ recognition.onresult = (event) => {
 
 function listendom(no){
   console.log(no)
-  //console.log(document.getElementById(no))
 document.getElementById("MSG").value= no.innerHTML;
   insertMessage();
 }
@@ -110,13 +109,13 @@ function fetchmsg(butt){
         data.append('MSG', button_val);
       }
 
-      console.log("abc",data)
+      //console.log("abc",data)
         fetch(url, {
           method: 'POST',
           body:data
         }).then(res => res.json())
          .then(response => {
-          console.log(response);
+          //console.log(response);
          serverMessage(response.Reply);
           //speechSynthesis.speak( new SpeechSynthesisUtterance(response.Reply))
          })

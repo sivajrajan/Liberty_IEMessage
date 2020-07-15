@@ -54,12 +54,12 @@ async function runSample(msg,projectId = 'liberty-humancapital-sit-fwetn') {
 
   // Send request and log result
   const responses = await sessionClient.detectIntent(request);
-  console.log('Detected intent');
+ // console.log('Detected intent');
   const result = responses[0].queryResult;
-  console.log(`  Query: ${result.queryText}`);
-  console.log(`  Response: ${result.fulfillmentText}`);
+ // console.log(`  Query: ${result.queryText}`);
+ // console.log(`  Response: ${result.fulfillmentText}`);
   if (result.intent) {
-    console.log(`  Intent: ${result.intent.displayName}`);
+  //  console.log(`  Intent: ${result.intent.displayName}`);
   } else {
     console.log(`  No intent matched.`);
   }
