@@ -31,11 +31,11 @@ app.post('/send-msg',(req,res)=>{
  * Send a query to the dialogflow agent, and return the query result.
  * @param {string} projectId The project to be used
  */
-async function runSample(msg,projectId = 'liberty-humancapital-sit-fwetn') {
+async function runSample(msg,projectId = 'liberty-humancapital-prod-ufhp') {
 
   // Create a new session
   const sessionClient = new dialogflow.SessionsClient({
-	  keyFilename:"D:/Liberty-master/Liberty-master/Liberty_IEMessage/liberty-humancapital-sit-fwetn-f2c14bb660e5.json"
+	  keyFilename:"D:/Liberty-master/Liberty-master/Liberty_IEMessage/liberty-humancapital-prod-ufhp-e2c34c9968d2.json"
   });
   const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 
